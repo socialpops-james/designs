@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Pops - Share Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen justify-between">
+  
+<!-- Header -->
+<header class="p-6 text-center">
+  <a href="/" class="text-purple-600 font-bold text-2xl">
+    social <span class="text-pink-500">pops</span>
+  </a>
+</header>
+
+<!-- Main Video + Share UI -->
+<main class="flex flex-col items-center px-4">
+  <div class="w-full max-w-2xl aspect-video mb-6">
+    <video controls poster="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/thumbnail.jpg"
+           class="w-full h-full rounded shadow">
+      <source src="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/video.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  
+<div class="max-w-xl w-full mx-auto mt-6">
+  <div class="flex justify-center space-x-2 mb-4">
+    <button onclick="setMethod('share')" id="tab-share"
+            class="tab-btn bg-blue-600 text-white px-4 py-2 rounded-l">🔗 Share</button>
+    <button onclick="setMethod('post')" id="tab-post"
+            class="tab-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-r">🚀 Post</button>
+  </div>
+
+  <div id="share-panel" class="tab-content bg-white shadow rounded p-6 text-center">
+    <h3 class="text-lg font-bold mb-2">🔗 Share on LinkedIn</h3>
+    <p class="text-gray-600 text-sm mb-4">Opens a public share window with metadata preview.</p>
+    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Share Now</a>
+  </div>
+
+  <div id="post-panel" class="tab-content hidden bg-white shadow rounded p-6 text-center">
+    <h3 class="text-lg font-bold mb-2">🚀 Post to LinkedIn</h3>
+    <p class="text-gray-600 text-sm mb-4">Uploads your video to your feed via LinkedIn account (OAuth).</p>
+    <a href="#" class="bg-indigo-700 hover:bg-indigo-800 text-white py-2 px-4 rounded">Post Directly</a>
+  </div>
+</div>
+
+<script>
+function setMethod(method) {
+  document.getElementById('tab-share').classList.remove('bg-blue-600', 'text-white');
+  document.getElementById('tab-post').classList.remove('bg-indigo-700', 'text-white');
+  document.getElementById('tab-share').classList.add('bg-gray-200', 'text-gray-800');
+  document.getElementById('tab-post').classList.add('bg-gray-200', 'text-gray-800');
+
+  if (method === 'share') {
+    document.getElementById('tab-share').classList.add('bg-blue-600', 'text-white');
+    document.getElementById('share-panel').classList.remove('hidden');
+    document.getElementById('post-panel').classList.add('hidden');
+  } else {
+    document.getElementById('tab-post').classList.add('bg-indigo-700', 'text-white');
+    document.getElementById('post-panel').classList.remove('hidden');
+    document.getElementById('share-panel').classList.add('hidden');
+  }
+}
+</script>
+
+  </main>
+  
+<!-- Footer -->
+<footer class="text-center text-gray-400 text-sm py-6 mt-10">
+  © 2025 <a href="https://socialpops.co.uk" class="hover:text-purple-500 underline">Social Pops</a>
+</footer>
+
+</body>
+</html>

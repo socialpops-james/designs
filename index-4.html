@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Pops - Share Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen justify-between">
+  
+<!-- Header -->
+<header class="p-6 text-center">
+  <a href="/" class="text-purple-600 font-bold text-2xl">
+    social <span class="text-pink-500">pops</span>
+  </a>
+</header>
+
+<!-- Main Video + Share UI -->
+<main class="flex flex-col items-center px-4">
+  <div class="w-full max-w-2xl aspect-video mb-6">
+    <video controls poster="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/thumbnail.jpg"
+           class="w-full h-full rounded shadow">
+      <source src="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/video.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl mt-6">
+  <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 flex flex-col items-center text-center">
+    <div class="mb-2 flex items-center space-x-2">
+      <span class="text-blue-600 text-xl">🔗</span>
+      <h3 class="text-lg font-semibold">Share on LinkedIn</h3>
+      <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded-full">via URL</span>
+    </div>
+    <p class="text-gray-600 text-sm mb-4">Open a LinkedIn share dialog with pre-filled description and image.</p>
+    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded">Share Now</a>
+  </div>
+
+  <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-6 flex flex-col items-center text-center">
+    <div class="mb-2 flex items-center space-x-2">
+      <span class="text-indigo-700 text-xl">🚀</span>
+      <h3 class="text-lg font-semibold">Post to LinkedIn</h3>
+      <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2 py-0.5 rounded-full">via LinkedIn API</span>
+    </div>
+    <p class="text-gray-600 text-sm mb-4">Publish directly from your LinkedIn account with video attached.</p>
+    <a href="#" class="bg-indigo-700 hover:bg-indigo-800 text-white text-sm font-medium py-2 px-4 rounded">Post With My Account</a>
+  </div>
+</div>
+
+  </main>
+  
+<!-- Footer -->
+<footer class="text-center text-gray-400 text-sm py-6 mt-10">
+  © 2025 <a href="https://socialpops.co.uk" class="hover:text-purple-500 underline">Social Pops</a>
+</footer>
+
+</body>
+</html>

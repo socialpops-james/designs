@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Pops - Share Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen justify-between">
+  
+<!-- Header -->
+<header class="p-6 text-center">
+  <a href="/" class="text-purple-600 font-bold text-2xl">
+    social <span class="text-pink-500">pops</span>
+  </a>
+</header>
+
+<!-- Main Video + Share UI -->
+<main class="flex flex-col items-center px-4">
+  <div class="w-full max-w-2xl aspect-video mb-6">
+    <video controls poster="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/thumbnail.jpg"
+           class="w-full h-full rounded shadow">
+      <source src="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/video.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  
+<div class="space-y-4 max-w-md mx-auto mt-6">
+  <div class="p-4 border border-blue-200 rounded bg-blue-50">
+    <div class="flex items-center justify-between mb-2">
+      <h3 class="font-semibold text-blue-800">🔗 Share on LinkedIn</h3>
+      <span class="text-xs bg-blue-200 text-blue-800 px-2 py-0.5 rounded">Recommended</span>
+    </div>
+    <p class="text-sm text-blue-900 mb-2">Public share link with pre-filled description using Open Graph meta tags.</p>
+    <a href="#" class="bg-blue-700 hover:bg-blue-800 text-white text-sm py-1.5 px-4 rounded">Share</a>
+  </div>
+
+  <div class="p-4 border border-gray-300 rounded bg-white">
+    <div class="flex items-center justify-between mb-2">
+      <h3 class="font-semibold text-gray-800">🚀 Post to LinkedIn</h3>
+      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">OAuth required</span>
+    </div>
+    <p class="text-sm text-gray-700 mb-2">Upload the video directly to your feed via your LinkedIn account.</p>
+    <a href="#" class="bg-gray-700 hover:bg-gray-800 text-white text-sm py-1.5 px-4 rounded">Post</a>
+  </div>
+</div>
+
+  </main>
+  
+<!-- Footer -->
+<footer class="text-center text-gray-400 text-sm py-6 mt-10">
+  © 2025 <a href="https://socialpops.co.uk" class="hover:text-purple-500 underline">Social Pops</a>
+</footer>
+
+</body>
+</html>
