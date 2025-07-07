@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Pops - Share Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen justify-between">
+
+  <header class="p-6 text-center">
+    <a href="/" class="text-purple-600 font-bold text-2xl">
+      social <span class="text-pink-500">pops</span>
+    </a>
+  </header>
+
+  <main class="flex flex-col items-center px-4">
+    <div class="w-full max-w-2xl aspect-video mb-6">
+      <video controls poster="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/thumbnail.jpg" class="w-full h-full rounded shadow">
+        <source src="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Card layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl mb-6">
+      <div class="p-4 border rounded shadow bg-white text-center">
+        <h3 class="font-semibold mb-2">🔗 Share on LinkedIn</h3>
+        <p class="text-sm text-gray-600 mb-4">Opens a LinkedIn share window with pre-filled description using metadata.</p>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/share"
+           class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800 block">
+          Share
+        </a>
+      </div>
+      <div class="p-4 border rounded shadow bg-white text-center">
+        <h3 class="font-semibold mb-2">🚀 Post to LinkedIn</h3>
+        <p class="text-sm text-gray-600 mb-4">Post the video directly using your LinkedIn account (OAuth login required).</p>
+        <a href="/oauth/linkedin-post?video=o9L1SpgX26ZP8WKKp59f20y1vpAnmU"
+           class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-950 block">
+          Post
+        </a>
+      </div>
+    </div>
+
+    <!-- Additional buttons -->
+    <div class="space-y-3 w-full max-w-xs text-center">
+      <a href="https://twitter.com/intent/tweet?text=Check%20this%20out!&url=https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/share"
+         class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 block">
+        🐦 Share on Twitter
+      </a>
+      <a href="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/video.mp4"
+         download class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 block">
+        ⬇️ Download
+      </a>
+    </div>
+  </main>
+
+  <footer class="text-center text-gray-400 text-sm py-6">
+    © 2025 <a href="https://socialpops.co.uk" class="hover:text-purple-500 underline">Social Pops</a>
+  </footer>
+</body>
+</html>

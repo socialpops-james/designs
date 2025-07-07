@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Pops - Share Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen justify-between">
+
+  <!-- Header -->
+  <header class="p-6 text-center">
+    <a href="/" class="text-purple-600 font-bold text-2xl">
+      social <span class="text-pink-500">pops</span>
+    </a>
+  </header>
+
+  <!-- Main -->
+  <main class="flex flex-col items-center px-4">
+    <!-- Video -->
+    <div class="w-full max-w-2xl aspect-video mb-6">
+      <video
+        controls
+        poster="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/thumbnail.jpg"
+        class="w-full h-full rounded shadow"
+      >
+        <source src="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Buttons -->
+    <div class="space-y-3 w-full max-w-xs text-center">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvideos.socialpops.co.uk%2Fo9L1SpgX26ZP8WKKp59f20y1vpAnmU%2Fshare"
+         class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800 block">
+        🔗 Share on LinkedIn
+      </a>
+
+      <a href="/oauth/linkedin-post?video=o9L1SpgX26ZP8WKKp59f20y1vpAnmU"
+         class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-950 block">
+        🚀 Post to LinkedIn (via your account)
+      </a>
+
+      <a href="#" onclick="alert('🔗 Share on LinkedIn: Pre-filled post via URL + meta tags.\n🚀 Post: Upload the video using your LinkedIn account directly.')"
+         class="text-sm text-gray-600 hover:underline block">
+        What’s the difference?
+      </a>
+
+      <a href="https://twitter.com/intent/tweet?text=Check%20this%20out!&url=https%3A%2F%2Fvideos.socialpops.co.uk%2Fo9L1SpgX26ZP8WKKp59f20y1vpAnmU%2Fshare"
+         class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 block">
+        🐦 Share on Twitter
+      </a>
+
+      <a href="https://videos.socialpops.co.uk/o9L1SpgX26ZP8WKKp59f20y1vpAnmU/video.mp4"
+         download class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 block">
+        ⬇️ Download
+      </a>
+    </div>
+  </main>
+
+  <footer class="text-center text-gray-400 text-sm py-6">
+    © 2025 <a href="https://socialpops.co.uk" class="hover:text-purple-500 underline">Social Pops</a>
+  </footer>
+</body>
+</html>
